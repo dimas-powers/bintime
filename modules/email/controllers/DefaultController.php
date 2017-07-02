@@ -51,7 +51,7 @@ class DefaultController extends Controller
         $AllPosts = Email::find();
 
         if ($AllPosts) {
-            $pages = new Pagination(['totalCount' => $AllPosts->count(), 'pageSize'=>5]);
+            $pages = new Pagination(['totalCount' => $AllPosts->count(), 'pageSize'=>10]);
             $posts = $AllPosts->offset($pages->offset)
             ->limit($pages->limit)
             ->all();
