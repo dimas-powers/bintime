@@ -88,7 +88,33 @@ class DefaultController extends Controller
             ]);
         }
     }
+    // public function actionCreate()
+    // {
+    //     $model = new Email();
+        
+    //     if (\Yii::$app->request->isPost) {
+    //         $post = \Yii::$app->request->post();
 
+    //         if (empty($post) || empty($post[$model->formName()]['email']))
+    //             return $this->render('create', [
+    //                 'model' => $model,
+    //             ]);
+            
+    //         $post[$model->formName()]['email'] = explode(';', $post[$model->formName()]['email']);
+
+    //         if ($model->load($post) && $model->save()) {
+    //             return $this->redirect(['view', 'id' => $model->id]);
+    //         } else {
+    //             return $this->render('create', [
+    //                 'model' => $model,
+    //             ]);
+    //         }
+    //     }
+
+    //     return $this->render('create', [
+    //         'model' => $model,
+    //     ]);
+    // }
     /**
      * Updates an existing Email model.
      * If update is successful, the browser will be redirected to the 'view' page.
